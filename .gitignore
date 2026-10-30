@@ -1,0 +1,22 @@
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+db-config.php
+secrets.php
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Database backups
+*.sql
+*.sql.gz
+*.dump
+*.bak
+
+# Git and editor files
+.git/
+.DS_Store
+Thumbs.db

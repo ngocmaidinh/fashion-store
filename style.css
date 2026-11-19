@@ -389,3 +389,706 @@ button, input {
         padding: 45px 15px;
     }
 }
+
+/* ==========================================
+   MAIORA - AUTHENTICATION & ORDER PAGES
+   Soft Elegant / Minimalist / Modern
+========================================== */
+
+body {
+    background: var(--cream, #F8F6F1);
+    color: var(--dark, #302A25);
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+main {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 48px 0 72px;
+}
+
+h1, h2, h3 {
+    color: var(--dark, #302A25);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+form {
+    color: var(--dark, #302A25);
+}
+
+form input:not([type="checkbox"]):not([type="radio"]),
+form select,
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 46px;
+    padding: 12px 14px;
+    margin: 7px 0 17px;
+    border: 1px solid var(--beige, #D9CFC2);
+    border-radius: 3px;
+    background: #fff;
+    color: var(--dark, #302A25);
+    font: inherit;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: var(--brown, #76685C);
+    box-shadow: 0 0 0 3px rgba(118, 104, 92, .10);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--brown, #76685C);
+    font-size: 13px;
+    letter-spacing: .3px;
+}
+
+form button,
+button,
+input[type="submit"] {
+    min-height: 45px;
+    padding: 12px 25px;
+    border: 1px solid var(--dark, #302A25);
+    border-radius: 2px;
+    background: var(--dark, #302A25);
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+form button:hover,
+button:hover,
+input[type="submit"]:hover {
+    background: var(--brown, #76685C);
+    border-color: var(--brown, #76685C);
+}
+
+form a,
+main a {
+    color: var(--brown, #76685C);
+    text-decoration: none;
+}
+
+form a:hover,
+main a:hover {
+    text-decoration: underline;
+}
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid var(--light, #EAE5DD);
+}
+
+main th {
+    padding: 16px;
+    background: var(--light, #EAE5DD);
+    color: var(--dark, #302A25);
+    text-align: left;
+    font-weight: 500;
+}
+
+main td {
+    padding: 15px 16px;
+    border-bottom: 1px solid var(--light, #EAE5DD);
+    vertical-align: middle;
+}
+
+main tr:last-child td {
+    border-bottom: 0;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+main .message,
+main .alert,
+main .error,
+main .success {
+    padding: 13px 16px;
+    margin: 16px 0;
+    border: 1px solid var(--beige, #D9CFC2);
+    background: #fff;
+    color: var(--dark, #302A25);
+}
+
+main .auth-container,
+main .form-container,
+main .login-container,
+main .register-container {
+    width: min(460px, 100%);
+    margin: 0 auto;
+    padding: 38px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid var(--light, #EAE5DD);
+}
+
+main .auth-container form button,
+main .form-container form button,
+main .login-container form button,
+main .register-container form button {
+    width: 100%;
+}
+
+main .order-card,
+main .checkout-card {
+    margin: 20px 0;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid var(--light, #EAE5DD);
+}
+
+@media (max-width: 640px) {
+    main {
+        width: calc(100% - 28px);
+        padding: 30px 0 48px;
+    }
+
+    main .auth-container,
+    main .form-container,
+    main .login-container,
+    main .register-container {
+        padding: 24px 18px;
+    }
+
+    main table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    main th,
+    main td {
+        padding: 12px;
+    }
+}
+
+
+/* ==========================================
+   MAIORA - MY ORDERS PAGE
+========================================== */
+
+.orders-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 55px 20px 80px;
+}
+
+.orders-heading {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.orders-heading .eyebrow {
+    color: #9A8877;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.orders-heading h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 5vw, 54px);
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+.orders-heading p {
+    color: #887B70;
+    font-size: 14px;
+}
+
+.orders-container {
+    background: #fff;
+    border: 1px solid #EAE5DD;
+    padding: 28px;
+}
+
+.orders-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-container th {
+    background: #F8F6F1;
+    color: #76685C;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 17px 14px;
+    text-align: left;
+}
+
+.orders-container td {
+    padding: 20px 14px;
+    border-bottom: 1px solid #EEEAE4;
+    color: #51473F;
+    font-size: 13px;
+}
+
+.orders-container tr:last-child td {
+    border-bottom: none;
+}
+
+.orders-container tbody tr:hover {
+    background: #FCFAF7;
+}
+
+.orders-container a {
+    color: #76685C;
+    text-decoration: none;
+    border-bottom: 1px solid #D9CFC2;
+    padding-bottom: 2px;
+}
+
+.orders-container a:hover {
+    color: #302A25;
+}
+
+.order-status {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #F3EFE9;
+    color: #76685C;
+    font-size: 11px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.orders-empty {
+    text-align: center;
+    padding: 65px 20px;
+    background: #fff;
+}
+
+.orders-empty h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.orders-empty p {
+    color: #887B70;
+    font-size: 14px;
+    margin: 12px 0 25px;
+}
+
+.orders-empty a {
+    display: inline-block;
+    padding: 13px 27px;
+    background: #302A25;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.orders-empty a:hover {
+    background: #76685C;
+}
+
+@media (max-width: 700px) {
+    .orders-page {
+        padding: 35px 14px 55px;
+    }
+
+    .orders-container {
+        padding: 12px;
+        overflow-x: auto;
+    }
+
+    .orders-container table {
+        min-width: 620px;
+    }
+}
+
+
+/* ==========================================
+   MAIORA - ORDERS TABLE REFINEMENT
+========================================== */
+
+body table {
+    width: min(1000px, calc(100% - 40px));
+    margin: 35px auto 70px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #FFFFFF;
+    border: 1px solid #EAE5DD;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(48, 42, 37, 0.045);
+}
+
+body table th {
+    padding: 19px 22px;
+    background: #F1EDE6;
+    color: #66584C;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 1px solid #E5DED4;
+    text-align: left;
+}
+
+body table td {
+    padding: 19px 22px;
+    color: #51473F;
+    font-size: 13px;
+    background: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid #F0ECE6;
+    vertical-align: middle;
+}
+
+body table tr:last-child td {
+    border-bottom: none;
+}
+
+body table tbody tr {
+    transition: background 0.2s ease;
+}
+
+body table tbody tr:hover td {
+    background: #FBF9F5;
+}
+
+/* Delete button - soft beige/brown */
+body table button,
+body table input[type="submit"],
+body table form button {
+    min-width: 68px;
+    min-height: 36px;
+    padding: 8px 17px;
+    margin: 0;
+    background: #F3EFE9 !important;
+    color: #79695B !important;
+    border: 1px solid #DED4C8 !important;
+    border-radius: 3px !important;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    box-shadow: none !important;
+    transition: all 0.2s ease;
+}
+
+body table button:hover,
+body table input[type="submit"]:hover,
+body table form button:hover {
+    background: #76685C !important;
+    color: #FFFFFF !important;
+    border-color: #76685C !important;
+}
+
+/* Keep the order number elegant */
+body table td:first-child {
+    color: #76685C;
+    font-weight: 500;
+}
+
+/* Responsive table */
+@media (max-width: 700px) {
+    body table {
+        width: calc(100% - 24px);
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-top: 25px;
+    }
+
+    body table th,
+    body table td {
+        padding: 14px 15px;
+    }
+}
+
+
+/* ==========================================
+   MAIORA - ELEGANT NAVIGATION
+========================================== */
+
+body > a[href*="products.php"],
+body > a[href*="cart.php"],
+body > a[href*="orders.php"],
+body > a[href*="logout.php"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    box-sizing: border-box;
+    padding: 0 19px;
+    margin: 0;
+    color: #76685C;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    transition: color .25s ease, background .25s ease,
+                border-color .25s ease;
+}
+
+body > a[href*="products.php"]:hover,
+body > a[href*="cart.php"]:hover,
+body > a[href*="orders.php"]:hover {
+    color: #302A25;
+    background: #F1EDE6;
+    border-bottom-color: #B8A797;
+    text-decoration: none;
+}
+
+body > a[href*="logout.php"] {
+    margin-left: 8px;
+    min-height: 34px;
+    padding: 0 17px;
+    color: #76685C;
+    background: #F1EDE6;
+    border: 1px solid #DED4C8;
+    border-radius: 3px;
+}
+
+body > a[href*="logout.php"]:hover {
+    color: #FFFFFF;
+    background: #76685C;
+    border-color: #76685C;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    body > a[href*="products.php"],
+    body > a[href*="cart.php"],
+    body > a[href*="orders.php"] {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    body > a[href*="logout.php"] {
+        padding: 0 10px;
+        margin-left: 2px;
+    }
+}
+
+
+/* ==========================================
+   MAIORA - ELEGANT NAVIGATION
+========================================== */
+
+body > a[href*="products.php"],
+body > a[href*="cart.php"],
+body > a[href*="orders.php"],
+body > a[href*="logout.php"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    box-sizing: border-box;
+    padding: 0 19px;
+    margin: 0;
+    color: #76685C;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    transition: color .25s ease, background .25s ease,
+                border-color .25s ease;
+}
+
+body > a[href*="products.php"]:hover,
+body > a[href*="cart.php"]:hover,
+body > a[href*="orders.php"]:hover {
+    color: #302A25;
+    background: #F1EDE6;
+    border-bottom-color: #B8A797;
+    text-decoration: none;
+}
+
+body > a[href*="logout.php"] {
+    margin-left: 8px;
+    min-height: 34px;
+    padding: 0 17px;
+    color: #76685C;
+    background: #F1EDE6;
+    border: 1px solid #DED4C8;
+    border-radius: 3px;
+}
+
+body > a[href*="logout.php"]:hover {
+    color: #FFFFFF;
+    background: #76685C;
+    border-color: #76685C;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    body > a[href*="products.php"],
+    body > a[href*="cart.php"],
+    body > a[href*="orders.php"] {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    body > a[href*="logout.php"] {
+        padding: 0 10px;
+        margin-left: 2px;
+    }
+}
+
+
+/* ==========================================
+   MAIORA - LOGIN & REGISTER
+   Soft Elegant Authentication
+========================================== */
+
+body:has(form input[type="password"]) {
+    background: #F8F6F1;
+    color: #302A25;
+}
+
+/* Authentication form */
+body:has(form input[type="password"]) form {
+    width: min(430px, calc(100% - 36px));
+    box-sizing: border-box;
+    margin: 55px auto 75px;
+    padding: 42px 38px;
+    background: #FFFFFF;
+    border: 1px solid #EAE5DD;
+    border-radius: 4px;
+    box-shadow: 0 12px 35px rgba(48, 42, 37, .055);
+}
+
+/* Page headings */
+body:has(form input[type="password"]) h1 {
+    margin: 38px auto 10px;
+    color: #302A25;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 5vw, 48px);
+    font-weight: 500;
+    text-align: center;
+}
+
+body:has(form input[type="password"]) h2 {
+    color: #76685C;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Labels and fields */
+body:has(form input[type="password"]) form label {
+    display: block;
+    margin: 13px 0 7px;
+    color: #76685C;
+    font-size: 12px;
+    letter-spacing: .4px;
+}
+
+body:has(form input[type="password"]) form input:not([type="checkbox"]):not([type="radio"]) {
+    width: 100%;
+    min-height: 47px;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    margin: 0 0 13px;
+    border: 1px solid #DED6CC;
+    border-radius: 3px;
+    background: #FDFCFA;
+    color: #302A25;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 13px;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+body:has(form input[type="password"]) form input:focus {
+    border-color: #9B8978;
+    box-shadow: 0 0 0 3px rgba(118, 104, 92, .09);
+}
+
+/* Main action button */
+body:has(form input[type="password"]) form button,
+body:has(form input[type="password"]) form input[type="submit"] {
+    width: 100%;
+    min-height: 47px;
+    margin-top: 13px;
+    border: 1px solid #76685C;
+    border-radius: 3px;
+    background: #76685C;
+    color: #FFFFFF;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+body:has(form input[type="password"]) form button:hover,
+body:has(form input[type="password"]) form input[type="submit"]:hover {
+    background: #302A25;
+    border-color: #302A25;
+}
+
+/* Links */
+body:has(form input[type="password"]) form a {
+    color: #8B7968;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+body:has(form input[type="password"]) form a:hover {
+    color: #302A25;
+    text-decoration: underline;
+}
+
+/* Validation messages */
+body:has(form input[type="password"]) .error,
+body:has(form input[type="password"]) .success,
+body:has(form input[type="password"]) .message,
+body:has(form input[type="password"]) .alert {
+    padding: 12px 14px;
+    margin: 12px 0;
+    border: 1px solid #EAE5DD;
+    border-radius: 3px;
+    background: #F8F6F1;
+    color: #76685C;
+    font-size: 13px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body:has(form input[type="password"]) form {
+        padding: 28px 22px;
+        margin: 35px auto 50px;
+    }
+}

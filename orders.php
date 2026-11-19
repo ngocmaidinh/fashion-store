@@ -42,7 +42,8 @@ $orders = $stmt->get_result();
  nav{margin-bottom:20px}
  nav a{margin-right:15px}
  button.danger{background:#d9534f;color:white;border:none;padding:6px 12px;cursor:pointer;border-radius:4px}
-</style></head>
+</style>    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 <nav>
   <a href="products.php">Sản phẩm</a>
